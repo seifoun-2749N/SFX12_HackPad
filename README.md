@@ -11,13 +11,13 @@
 
 ---
 
-## Overview
+## Overview :
 
 A costom macropad made with 12 mechanical switches and a rotay encoder with creative and chic design . It's also an open source device that you can build it yourself and costumize it like you want. 
 
 ---
 
-## Features
+## Features :
 
 - 12 mechanical switches
 - Rotary encoder
@@ -28,7 +28,7 @@ A costom macropad made with 12 mechanical switches and a rotay encoder with crea
 
 ---
 
-## Hardware
+## Hardware :
 
 * Seeeduino XIAO (1) SAMD21G18, 3.3V logic, USB-C
 * mechanical switches (12) MX-compatible
@@ -38,7 +38,7 @@ A costom macropad made with 12 mechanical switches and a rotay encoder with crea
 
 ---
 
-## PCB and Shematics
+## PCB and Shematics :
 
 ### PCB Front
 <img width="1724" height="930" alt="PCB" src="https://github.com/user-attachments/assets/1fc76bcb-e276-4f9b-b6f7-b92f15c2396f" />
