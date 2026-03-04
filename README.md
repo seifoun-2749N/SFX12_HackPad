@@ -20,8 +20,6 @@ Built around the **Seeeduino XIAO (SAMD21)**, it packs 12 mechanical switches in
 
 The standout feature is **tap dance**: every key is double-mapped — a single tap triggers one action, a double tap triggers another. This gives **24 unique actions** across just 12 physical keys, with no layer switching required.
 
-<!-- Add an overview/hero photo of the finished build here -->
-![Assembled Build](images/assembled.jpg)
 
 ---
 
