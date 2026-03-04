@@ -4,7 +4,7 @@
 
 <img width="1920" height="1080" alt="Affiche HackPad(1)" src="https://github.com/user-attachments/assets/a0ad608b-c370-4724-a11c-bca920ab98a2" />
 
-**A custom 12-key macropad with rotary encoder and WS2812B RGB LEDs, powered by QMK firmware.**
+**A custom 12-key macropad with rotary encoder and WS2812B RGB LEDs.**
 
 </div>
 
@@ -30,11 +30,11 @@ A costom macropad made with 12 mechanical switches and a rotay encoder with crea
 
 ## Hardware :
 
-* Seeeduino XIAO (1) SAMD21G18, 3.3V logic, USB-C
+* Seeeduino XIAO (1) SAMD21G18
 * mechanical switches (12) MX-compatible
 * EC11 (1) Rotary encoder with push button
 * WS2812B (5) addressable RGB LEDs
-* 1N4148 (12) signal diodes, COL2ROW wiring
+* 1N4148 (12) signal diodes
 
 ---
 
