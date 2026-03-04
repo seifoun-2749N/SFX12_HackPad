@@ -3,34 +3,12 @@
 <div align="center">
 
 <!-- Add your banner/hero image here -->
-![SFX12 Hackpad Banner](images/banner.png)
+<img width="1920" height="1080" alt="Affiche HackPad(1)" src="https://github.com/user-attachments/assets/a0ad608b-c370-4724-a11c-bca920ab98a2" />
+
 
 **A custom 12-key macropad with rotary encoder and WS2812B RGB LEDs, powered by QMK firmware.**
 
-[![QMK Firmware](https://img.shields.io/badge/QMK-Firmware-blue?logo=qmk)](https://qmk.fm/)
-[![License](https://img.shields.io/badge/License-Open%20Hardware-green)](LICENSE)
-[![MCU](https://img.shields.io/badge/MCU-Seeeduino%20XIAO-red)](https://wiki.seeedstudio.com/Seeeduino-XIAO/)
-[![KiCad](https://img.shields.io/badge/PCB-KiCad-blue)](https://www.kicad.org/)
-
 </div>
-
----
-
-## Table of Contents
-
-- [Overview](#overview)
-- [Features](#features)
-- [Hardware](#hardware)
-- [PCB & Schematic](#pcb--schematic)
-- [Physical Layout](#physical-layout)
-- [Keymap](#keymap)
-- [RGB Lighting](#rgb-lighting)
-- [Firmware Setup](#firmware-setup)
-- [Audio Output Switch](#audio-output-switch)
-- [App Launch Notes](#app-launch-notes)
-- [Customization](#customization)
-- [Build Guide](#build-guide)
-- [Maintainer](#maintainer)
 
 ---
 
@@ -79,17 +57,17 @@ The standout feature is **tap dance**: every key is double-mapped — a single t
 
 | Function  | XIAO Pin | QMK Identifier |
 |-----------|----------|----------------|
-| Col 0     | A2       | `A2`           |
+| Col 0     | A0       | `A2`           |
 | Col 1     | A1       | `A1`           |
-| Col 2     | A10      | `A10`          |
-| Col 3     | A11      | `A11`          |
+| Col 2     | A2       | `A10`          |
+| Col 3     | A3       | `A11`          |
 | Row 0     | A4       | `A4`           |
 | Row 1     | A5       | `A5`           |
 | Row 2     | A6       | `A6`           |
 | Row 3     | A7       | `A7`           |
-| Encoder A | A0       | `A0`           |
-| Encoder B | A3       | `A3`           |
-| RGB Data  | B9       | `B9`           |
+| Encoder A | A8       | `A0`           |
+| Encoder B | A9       | `A3`           |
+| RGB Data  | A10      | `B9`           |
 
 ---
 
@@ -97,19 +75,15 @@ The standout feature is **tap dance**: every key is double-mapped — a single t
 
 <!-- Add your PCB front render here -->
 ### PCB Front
-![PCB Front](images/pcb_front.png)
+<img width="1724" height="930" alt="PCB" src="https://github.com/user-attachments/assets/1fc76bcb-e276-4f9b-b6f7-b92f15c2396f" />
 
 <!-- Add your PCB back render here -->
 ### PCB Back
-![PCB Back](images/pcb_back.png)
+<img width="1724" height="930" alt="PCB Back" src="https://github.com/user-attachments/assets/45b47787-28cd-4190-b4a0-88df3b74f2d1" />
 
 <!-- Add your schematic screenshot/export here -->
 ### Schematic
-![Schematic](images/schematic.png)
-
-<!-- Add your KiCad 3D render here -->
-### 3D Render
-![3D Render](images/3d_render.png)
+<img width="1245" height="868" alt="image" src="https://github.com/user-attachments/assets/d44a2e43-0c7d-47a0-801b-ce79dcd7400f" />
 
 The PCB was designed from scratch in **KiCad**. The key matrix uses a standard COL2ROW diode configuration with 1N4148 diodes. The WS2812B LEDs are daisy-chained from pin B9. The EC11 encoder sits in the top-left corner of the board, with its A/B signal lines routed to A0 and A3 on the XIAO.
 
@@ -120,7 +94,7 @@ The PCB was designed from scratch in **KiCad**. The key matrix uses a standard C
 ## Physical Layout
 
 ```
-[ ENC  ]              [ K01   ]  [ K02   ]
+[ ENC  ]             [ K01   ]  [ K02   ]
           [ K03   ]  [ K04   ]  [ K05   ]  [ K06   ]
           [ K07   ]  [ K08   ]  [ K09   ]  [ K10   ]
                      [ K11   ]  [ K12   ]
@@ -189,7 +163,7 @@ All 12 keys use **tap dance** — tap once for the primary action, tap twice wit
 |--------------|-------------|
 | Rotate left  | Volume Down |
 | Rotate right | Volume Up   |
-| Press        | — (not available on this build) |
+| Press        | Mute        |
 
 ---
 
@@ -206,109 +180,6 @@ All 12 keys use **tap dance** — tap once for the primary action, tap twice wit
 | Snake           | A lit segment chases around the board            |
 | Knight          | Back-and-forth scanning light effect             |
 | Static Gradient | Two-color gradient spread across all LEDs        |
-
-<!-- Add an RGB showcase photo here -->
-### RGB Showcase
-![RGB Lighting](images/rgb_showcase.jpg)
-
----
-
-## Firmware Setup
-
-### Prerequisites
-
-- [QMK MSYS](https://msys.qmk.fm/) installed (Windows), or QMK CLI on macOS/Linux
-- USB-C cable
-
-### Installation
-
-**1. Copy the keyboard folder into QMK:**
-```
-qmk_firmware/
-  keyboards/
-    sfx12_hackpad/        ← place this folder here
-      keyboard.json
-      config.h
-      rules.mk
-      keymaps/
-        default/
-          keymap.c
-```
-
-**2. Compile:**
-```bash
-qmk compile -kb sfx12_hackpad -km default
-```
-
-**3. Flash:**
-```bash
-qmk flash -kb sfx12_hackpad -km default
-```
-
-### Entering Bootloader Mode
-
-There are two ways to enter bootloader on the Seeeduino XIAO:
-
-- **Double-tap** the reset button on the back of the XIAO — the board appears as a USB drive
-- **Bootmagic** — hold the top-left matrix key (position [0,0]) while plugging in USB
-
-QMK will flash the firmware automatically when using `qmk flash`.
-
-### Adjusting Tap Dance Timing
-
-The double-tap detection window is **200ms** by default. Change it in `config.h`:
-
-```c
-#define TAPPING_TERM 200
-```
-
-| Value  | Best for                                |
-|--------|-----------------------------------------|
-| `150`  | Fast typists, quick double-taps         |
-| `200`  | Default, suits most users               |
-| `250`  | If double-taps feel rushed              |
-| `300`  | Relaxed tapping, occasional accidentals |
-
----
-
-## Audio Output Switch
-
-Double-tapping **K08** runs a PowerShell script that cycles through your active audio playback devices — for example, from headphones to speakers to a USB headset and back again.
-
-### Step 1 — Install AudioDeviceCmdlets
-
-Open **PowerShell as Administrator**:
-
-```powershell
-Install-Module -Name AudioDeviceCmdlets -Force
-```
-
-### Step 2 — Create the Script
-
-Save the following file as `C:\Users\<YourName>\switch_audio.ps1`:
-
-```powershell
-Import-Module AudioDeviceCmdlets
-
-$devices = Get-AudioDevice -List | Where-Object { $_.Type -eq 'Playback' }
-$current = (Get-AudioDevice -Playback).ID
-$idx = 0
-
-for ($i = 0; $i -lt $devices.Count; $i++) {
-    if ($devices[$i].ID -eq $current) { $idx = $i; break }
-}
-
-$next = $devices[($idx + 1) % $devices.Count]
-Set-AudioDevice -ID $next.ID
-```
-
-### Step 3 — Allow Script Execution (one-time only)
-
-```powershell
-Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
-```
-
-After this setup, each double-tap of K08 silently switches to the next audio device in your list.
 
 ---
 
