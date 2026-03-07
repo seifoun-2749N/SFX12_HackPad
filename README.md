@@ -13,7 +13,7 @@
 
 ## Overview :
 
-A costum macropad made with 12 mechanical switches and a rotay encoder with creative and chic design . It's also an open source device that you can build it yourself and costumize it like you want. 
+A custom macropad made with 12 mechanical switches and a rotay encoder with creative and chic design . It's also an open source device that you can build it yourself and costumize it like you want. 
 
 ---
 
