@@ -2220,7 +2220,7 @@
 			)
 		)
 	)
-	(global_label "WS2812B"
+	(global_label "SK6812"
 		(shape input)
 		(at 232.41 62.23 180)
 		(fields_autoplaced yes)
@@ -2232,7 +2232,7 @@
 		)
 		(uuid "0f8cc8a1-8698-41df-92ac-c41fe73f9450")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 220.6559 62.23 0)
+			(at 222.1073 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2462,7 +2462,7 @@
 			)
 		)
 	)
-	(global_label "WS2812B"
+	(global_label "SK6812"
 		(shape input)
 		(at 80.01 160.02 180)
 		(fields_autoplaced yes)
@@ -2474,7 +2474,7 @@
 		)
 		(uuid "7a5d2bf9-ad57-475c-a022-53583807aa3e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 68.2559 160.02 0)
+			(at 69.7073 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2704,7 +2704,7 @@
 			)
 		)
 	)
-	(global_label "WS2812B"
+	(global_label "SK6812"
 		(shape input)
 		(at 182.88 128.27 0)
 		(fields_autoplaced yes)
@@ -2716,7 +2716,7 @@
 		)
 		(uuid "d7f9beb0-41d9-453f-aa39-3040b00fc28f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 194.6341 128.27 0)
+			(at 193.1827 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2748,7 +2748,7 @@
 			)
 		)
 	)
-	(global_label "WS2812B"
+	(global_label "SK6812"
 		(shape input)
 		(at 78.74 119.38 180)
 		(fields_autoplaced yes)
@@ -2760,7 +2760,7 @@
 		)
 		(uuid "dedae1fb-a064-4136-98fd-4f27d09033a8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 66.9859 119.38 0)
+			(at 68.4373 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3073,7 +3073,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm"
+		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
 			(at 88.9 167.64 0)
 			(effects
 				(font
@@ -3865,7 +3865,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm"
+		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
 			(at 241.3 69.85 0)
 			(effects
 				(font
@@ -4247,7 +4247,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm"
+		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
 			(at 87.63 127 0)
 			(effects
 				(font
@@ -4649,7 +4649,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm"
+		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
 			(at 245.11 177.8 0)
 			(effects
 				(font
@@ -4725,7 +4725,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm"
+		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
 			(at 241.3 135.89 0)
 			(effects
 				(font
