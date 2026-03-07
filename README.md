@@ -47,6 +47,6 @@ A custom macropad made with 12 mechanical switches and a rotay encoder with crea
 <img width="1724" height="930" alt="PCB Back" src="https://github.com/user-attachments/assets/45b47787-28cd-4190-b4a0-88df3b74f2d1" />
 
 ### Schematic
-<img width="1245" height="868" alt="image" src="https://github.com/user-attachments/assets/d44a2e43-0c7d-47a0-801b-ce79dcd7400f" />
+<img width="1252" height="854" alt="image" src="https://github.com/user-attachments/assets/5fec2c5a-1810-4e04-b9f5-9d2fbf1a19aa" />
 
 ---
