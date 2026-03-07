@@ -13,12 +13,12 @@
         "rgblight": true
     },
     "matrix_pins": {
-        "cols": ["A2", "A1", "A10", "A11"],
+        "cols": ["A0", "A1", "A2", "A3"],
         "rows": ["A4", "A5", "A6", "A7"]
     },
     "encoder": {
         "rotary": [
-            {"pin_a": "A0", "pin_b": "A3", "resolution": 4}
+            {"pin_a": "A8", "pin_b": "A9", "resolution": 4}
         ]
     },
     "rgblight": {
