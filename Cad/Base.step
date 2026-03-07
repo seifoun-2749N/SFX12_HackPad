@@ -9,8 +9,8 @@ FILE_DESCRIPTION(
 /* implementation_level */ '2;1');
 
 FILE_NAME(
-/* name */ 'Component7.step',
-/* time_stamp */ '2026-03-03T18:09:16+01:00',
+/* name */ 'Base.step',
+/* time_stamp */ '2026-03-07T23:29:11+01:00',
 /* author */ (''),
 /* organization */ (''),
 /* preprocessor_version */ 'ST-DEVELOPER v20.1',
@@ -1473,17 +1473,15 @@ SOLID_ANGLE_UNIT()
 #1407=PRODUCT_DEFINITION_SHAPE('',$,#1410);
 #1408=SHAPE_REPRESENTATION('',(#842),#1400);
 #1409=PRODUCT_DEFINITION_CONTEXT('part definition',#1414,'design');
-#1410=PRODUCT_DEFINITION('2026-03-03-18-09-16-230','FusionComponent',#1411,
-#1409);
+#1410=PRODUCT_DEFINITION('2026-03-07-23-29-11-023','Base',#1411,#1409);
 #1411=PRODUCT_DEFINITION_FORMATION('',$,#1416);
-#1412=PRODUCT_RELATED_PRODUCT_CATEGORY('FusionComponent',
-'FusionComponent',(#1416));
+#1412=PRODUCT_RELATED_PRODUCT_CATEGORY('Base','Base',(#1416));
 #1413=APPLICATION_PROTOCOL_DEFINITION('international standard',
 'automotive_design',2009,#1414);
 #1414=APPLICATION_CONTEXT(
 'Core Data for Automotive Mechanical Design Process');
 #1415=PRODUCT_CONTEXT('part definition',#1414,'mechanical');
-#1416=PRODUCT('2026-03-03-18-09-16-230','FusionComponent',$,(#1415));
+#1416=PRODUCT('2026-03-07-23-29-11-023','Base',$,(#1415));
 #1417=PRESENTATION_STYLE_ASSIGNMENT((#1419));
 #1418=PRESENTATION_STYLE_ASSIGNMENT((#1420));
 #1419=SURFACE_STYLE_USAGE(.BOTH.,#1421);

@@ -9,8 +9,8 @@ FILE_DESCRIPTION(
 /* implementation_level */ '2;1');
 
 FILE_NAME(
-/* name */ 'Component4.step',
-/* time_stamp */ '2026-03-03T18:06:46+01:00',
+/* name */ 'Transparent layer.step',
+/* time_stamp */ '2026-03-07T23:25:51+01:00',
 /* author */ (''),
 /* organization */ (''),
 /* preprocessor_version */ 'ST-DEVELOPER v20.1',
@@ -509,17 +509,17 @@ SOLID_ANGLE_UNIT()
 #454=PRODUCT_DEFINITION_SHAPE('',$,#457);
 #455=SHAPE_REPRESENTATION('',(#289),#447);
 #456=PRODUCT_DEFINITION_CONTEXT('part definition',#461,'design');
-#457=PRODUCT_DEFINITION('2026-03-03-18-06-46-389','FusionComponent',#458,
+#457=PRODUCT_DEFINITION('2026-03-07-23-25-51-444','Transparent layer',#458,
 #456);
 #458=PRODUCT_DEFINITION_FORMATION('',$,#463);
-#459=PRODUCT_RELATED_PRODUCT_CATEGORY('FusionComponent',
-'FusionComponent',(#463));
+#459=PRODUCT_RELATED_PRODUCT_CATEGORY('Transparent layer',
+'Transparent layer',(#463));
 #460=APPLICATION_PROTOCOL_DEFINITION('international standard',
 'automotive_design',2009,#461);
 #461=APPLICATION_CONTEXT(
 'Core Data for Automotive Mechanical Design Process');
 #462=PRODUCT_CONTEXT('part definition',#461,'mechanical');
-#463=PRODUCT('2026-03-03-18-06-46-389','FusionComponent',$,(#462));
+#463=PRODUCT('2026-03-07-23-25-51-444','Transparent layer',$,(#462));
 #464=PRESENTATION_STYLE_ASSIGNMENT((#467));
 #465=PRESENTATION_STYLE_ASSIGNMENT((#468));
 #466=PRESENTATION_STYLE_ASSIGNMENT((#469));
