@@ -21,7 +21,7 @@ A custom macropad made with 12 mechanical switches and a rotay encoder with crea
 
 - 12 mechanical switches
 - Rotary encoder
-- 5 * WS2812B RGB LEDs 
+- 5 * SK6812 RGB LEDs 
 - Tap dance on every key
 - 12 app launchers
 - Dedicated shortcut row
@@ -33,7 +33,7 @@ A custom macropad made with 12 mechanical switches and a rotay encoder with crea
 * Seeeduino XIAO (1) SAMD21G18
 * mechanical switches (12) MX-compatible
 * EC11 (1) Rotary encoder with push button
-* WS2812B (5) addressable RGB LEDs
+* SK6812 (5) addressable RGB LEDs
 * 1N4148 (12) signal diodes
 
 ---
