@@ -23,7 +23,7 @@
     },
     "rgblight": {
         "led_count": 6,
-        "pin": "B9",
+        "pin": "A10",
         "driver": "sk6812",
         "animations": {
             "breathing": true,
