@@ -24,6 +24,7 @@
     "rgblight": {
         "led_count": 6,
         "pin": "B9",
+        "driver": "sk6812",
         "animations": {
             "breathing": true,
             "rainbow_mood": true,

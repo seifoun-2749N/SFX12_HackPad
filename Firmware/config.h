@@ -1,8 +1,10 @@
 #pragma once
 
-// RGB LEDs
+// RGB LEDs — SK6812 (RGBW)
 #define RGBLED_NUM 6
 #define RGB_DI_PIN B9
+#define RGBLIGHT_DRIVER SK6812           // SK6812 uses the same WS2812 protocol
+#define SK6812_RGBW                      // enable the White channel
 #define RGBLIGHT_EFFECT_BREATHING
 #define RGBLIGHT_EFFECT_RAINBOW_MOOD
 #define RGBLIGHT_EFFECT_RAINBOW_SWIRL
