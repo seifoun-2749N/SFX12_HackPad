@@ -560,7 +560,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "LED:SK6812"
+		(symbol "SK6812MINI-E:SK6812MINI-E"
 			(pin_names
 				(offset 0.254)
 			)
@@ -568,7 +568,7 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "D"
-				(at 5.08 5.715 0)
+				(at -3.556 5.842 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -576,16 +576,18 @@
 					(justify right bottom)
 				)
 			)
-			(property "Value" "SK6812"
+			(property "Value" "SK6812MINI-E"
 				(at 1.27 -5.715 0)
 				(effects
 					(font
 						(size 1.27 1.27)
+						(thickness 0.254)
+						(bold yes)
 					)
 					(justify left top)
 				)
 			)
-			(property "Footprint" "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm"
+			(property "Footprint" "SK6812MINI-E - 3.2x2.8x1.78mm"
 				(at 1.27 -7.62 0)
 				(effects
 					(font
@@ -595,7 +597,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf"
+			(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/4960/4960_SK6812MINI-E_REV02_EN.pdf"
 				(at 2.54 -9.525 0)
 				(effects
 					(font
@@ -614,7 +616,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "RGB LED NeoPixel addressable"
+			(property "ki_keywords" "RGB LED NeoPixel Mini addressable"
 				(at 0 0 0)
 				(effects
 					(font
@@ -623,7 +625,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "LED*SK6812*PLCC*5.0x5.0mm*P3.2mm*"
+			(property "ki_fp_filters" "LED*SK6812MINI*PLCC*3.5x3.5mm*P1.75mm*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -632,7 +634,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "SK6812_0_0"
+			(symbol "SK6812MINI-E_0_0"
 				(text "RGB"
 					(at 2.286 -4.191 0)
 					(effects
@@ -642,7 +644,18 @@
 					)
 				)
 			)
-			(symbol "SK6812_0_1"
+			(symbol "SK6812MINI-E_0_1"
+				(rectangle
+					(start -5.08 5.08)
+					(end 5.08 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
 				(polyline
 					(pts
 						(xy 1.27 -2.54) (xy 1.778 -2.54)
@@ -727,19 +740,16 @@
 						(type none)
 					)
 				)
-				(rectangle
-					(start 5.08 5.08)
-					(end -5.08 -5.08)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
+			)
+			(symbol "SK6812MINI-E_1_1"
+				(text "NOT SK6812MINI"
+					(at 8.636 6.604 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
 					)
 				)
-			)
-			(symbol "SK6812_1_1"
 				(pin input line
 					(at -7.62 0 0)
 					(length 2.54)
@@ -750,7 +760,7 @@
 							)
 						)
 					)
-					(number "2"
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -768,7 +778,7 @@
 							)
 						)
 					)
-					(number "3"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -786,7 +796,7 @@
 							)
 						)
 					)
-					(number "1"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -804,7 +814,7 @@
 							)
 						)
 					)
-					(number "4"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3048,7 +3058,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812")
+		(lib_id "SK6812MINI-E:SK6812MINI-E")
 		(at 87.63 160.02 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3058,7 +3068,7 @@
 		(fields_autoplaced yes)
 		(uuid "281d600b-5c58-4447-ac59-14310c9f93fb")
 		(property "Reference" "D17"
-			(at 97.79 153.5998 0)
+			(at 109.22 153.5998 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3066,14 +3076,14 @@
 			)
 		)
 		(property "Value" "SK6812"
-			(at 97.79 156.1398 0)
+			(at 109.22 156.1398 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
+		(property "Footprint" "SK6812MINI-E - 3.2x2.8x1.78mm"
 			(at 88.9 167.64 0)
 			(effects
 				(font
@@ -3083,7 +3093,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf"
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/4960/4960_SK6812MINI-E_REV02_EN.pdf"
 			(at 90.17 169.545 0)
 			(effects
 				(font
@@ -3840,7 +3850,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812")
+		(lib_id "SK6812MINI-E:SK6812MINI-E")
 		(at 240.03 62.23 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3850,7 +3860,7 @@
 		(fields_autoplaced yes)
 		(uuid "56a8662a-851a-4496-9dde-5a4c0573dee7")
 		(property "Reference" "D13"
-			(at 250.19 55.8098 0)
+			(at 261.62 55.8098 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3858,14 +3868,14 @@
 			)
 		)
 		(property "Value" "SK6812"
-			(at 250.19 58.3498 0)
+			(at 261.62 58.3498 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
+		(property "Footprint" "SK6812MINI-E - 3.2x2.8x1.78mm"
 			(at 241.3 69.85 0)
 			(effects
 				(font
@@ -3875,7 +3885,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf"
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/4960/4960_SK6812MINI-E_REV02_EN.pdf"
 			(at 242.57 71.755 0)
 			(effects
 				(font
@@ -4222,7 +4232,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812")
+		(lib_id "SK6812MINI-E:SK6812MINI-E")
 		(at 86.36 119.38 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4232,7 +4242,7 @@
 		(fields_autoplaced yes)
 		(uuid "986210ff-94f6-4d60-8192-b8c1a5eb4605")
 		(property "Reference" "D16"
-			(at 96.52 112.9598 0)
+			(at 107.95 112.9598 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4240,14 +4250,14 @@
 			)
 		)
 		(property "Value" "SK6812"
-			(at 96.52 115.4998 0)
+			(at 107.95 115.4998 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
+		(property "Footprint" "SK6812MINI-E - 3.2x2.8x1.78mm"
 			(at 87.63 127 0)
 			(effects
 				(font
@@ -4257,7 +4267,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf"
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/4960/4960_SK6812MINI-E_REV02_EN.pdf"
 			(at 88.9 128.905 0)
 			(effects
 				(font
@@ -4624,7 +4634,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812")
+		(lib_id "SK6812MINI-E:SK6812MINI-E")
 		(at 243.84 170.18 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4634,7 +4644,7 @@
 		(fields_autoplaced yes)
 		(uuid "b0fa386e-4ce5-4fc2-8f15-b1e3336c9625")
 		(property "Reference" "D15"
-			(at 254 163.7598 0)
+			(at 265.43 163.7598 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4642,14 +4652,14 @@
 			)
 		)
 		(property "Value" "SK6812"
-			(at 254 166.2998 0)
+			(at 265.43 166.2998 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
+		(property "Footprint" "SK6812MINI-E - 3.2x2.8x1.78mm"
 			(at 245.11 177.8 0)
 			(effects
 				(font
@@ -4659,7 +4669,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf"
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/4960/4960_SK6812MINI-E_REV02_EN.pdf"
 			(at 246.38 179.705 0)
 			(effects
 				(font
@@ -4700,7 +4710,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812")
+		(lib_id "SK6812MINI-E:SK6812MINI-E")
 		(at 240.03 128.27 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4710,7 +4720,7 @@
 		(fields_autoplaced yes)
 		(uuid "b3828d69-009a-4631-83e1-3e24326295de")
 		(property "Reference" "D14"
-			(at 250.19 121.8498 0)
+			(at 261.62 121.8498 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4718,14 +4728,14 @@
 			)
 		)
 		(property "Value" "SK6812"
-			(at 250.19 124.3898 0)
+			(at 261.62 124.3898 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
+		(property "Footprint" "SK6812MINI-E - 3.2x2.8x1.78mm"
 			(at 241.3 135.89 0)
 			(effects
 				(font
@@ -4735,7 +4745,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf"
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/4960/4960_SK6812MINI-E_REV02_EN.pdf"
 			(at 242.57 137.795 0)
 			(effects
 				(font
