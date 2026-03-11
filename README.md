@@ -4,7 +4,7 @@
 
 <img width="1920" height="1080" alt="Affiche HackPad(1)" src="https://github.com/user-attachments/assets/a0ad608b-c370-4724-a11c-bca920ab98a2" />
 
-**A custom 12-key macropad with rotary encoder and WS2812B RGB LEDs.**
+**A custom 12-key macropad with rotary encoder and SK6812 RGB LEDs.**
 
 </div>
 
